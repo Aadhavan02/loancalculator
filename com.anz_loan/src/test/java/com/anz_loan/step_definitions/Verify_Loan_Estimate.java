@@ -1,14 +1,16 @@
 package com.anz_loan.step_definitions;
 
 
-import com.anz.constants.Constants;
-import com.anz.page.objects.LoanEstimatePage;
-import com.anzloan.webdriver.manager.DriverManager;
+
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+
+import com.anz.constants.Constants;
+import com.anz.page.objects.LoanEstimatePage;
+import com.anzloan.webdriver.manager.DriverManager;
 
 
 
@@ -21,13 +23,15 @@ public class Verify_Loan_Estimate {
 	public void navigate_to_the_loan_calculator_page() {
 		
 	    DriverManager.getDriver().get(Constants.APP_URL);
+	    
+	   
  
 	}
 
 	@Given("Fill up the required details")
 	public void fill_up_the_required_details() {
 		
-	    LoanEstimatePage.getInstance().enterAlldetails("80000", "10000", "500", "0", "0", "0", "1000");
+	    LoanEstimatePage.getInstance().enterAlldetails("80000", "10000", "500", "0", "100", "0", "10000");
 	    
 	}
 
