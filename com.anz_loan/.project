@@ -3,6 +3,7 @@
 	<name>com.anz_loan</name>
 	<comment></comment>
 	<projects>
+		<project>com.anzloan_dummy</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
